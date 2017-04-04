@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CC7A5D621E84C40100D5C3FD /* QMsgAntiRevoking.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7A5D611E84C40100D5C3FD /* QMsgAntiRevoking.h */; };
-		CC7A5D641E84C40100D5C3FD /* QMsgAntiRevoking.m in Sources */ = {isa = PBXBuildFile; fileRef = CC7A5D631E84C40100D5C3FD /* QMsgAntiRevoking.m */; };
+		CC2692BE1E8CF3C900B79A5C /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC2692BD1E8CF3C900B79A5C /* AppKit.framework */; };
+		CC2692C01E8CF3DC00B79A5C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC2692BF1E8CF3DC00B79A5C /* Foundation.framework */; };
+		CC2692C11E8CF41100B79A5C /* Dependency.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7A5D6E1E84C72D00D5C3FD /* Dependency.h */; };
+		CC7A5D6C1E84C6D400D5C3FD /* MQAIOChatViewController+AnitiRevoking.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7A5D6A1E84C6D400D5C3FD /* MQAIOChatViewController+AnitiRevoking.h */; };
+		CC7A5D6D1E84C6D400D5C3FD /* MQAIOChatViewController+AnitiRevoking.m in Sources */ = {isa = PBXBuildFile; fileRef = CC7A5D6B1E84C6D400D5C3FD /* MQAIOChatViewController+AnitiRevoking.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CC2692BD1E8CF3C900B79A5C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		CC2692BF1E8CF3DC00B79A5C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CC7A5D5E1E84C40100D5C3FD /* libQMsgAntiRevoking.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libQMsgAntiRevoking.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC7A5D611E84C40100D5C3FD /* QMsgAntiRevoking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QMsgAntiRevoking.h; sourceTree = "<group>"; };
-		CC7A5D631E84C40100D5C3FD /* QMsgAntiRevoking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QMsgAntiRevoking.m; sourceTree = "<group>"; };
+		CC7A5D6A1E84C6D400D5C3FD /* MQAIOChatViewController+AnitiRevoking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MQAIOChatViewController+AnitiRevoking.h"; sourceTree = "<group>"; };
+		CC7A5D6B1E84C6D400D5C3FD /* MQAIOChatViewController+AnitiRevoking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MQAIOChatViewController+AnitiRevoking.m"; sourceTree = "<group>"; };
+		CC7A5D6E1E84C72D00D5C3FD /* Dependency.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dependency.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -22,17 +28,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC2692C01E8CF3DC00B79A5C /* Foundation.framework in Frameworks */,
+				CC2692BE1E8CF3C900B79A5C /* AppKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC2692BC1E8CF3C800B79A5C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC2692BF1E8CF3DC00B79A5C /* Foundation.framework */,
+				CC2692BD1E8CF3C900B79A5C /* AppKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CC7A5D551E84C40100D5C3FD = {
 			isa = PBXGroup;
 			children = (
 				CC7A5D601E84C40100D5C3FD /* QMsgAntiRevoking */,
 				CC7A5D5F1E84C40100D5C3FD /* Products */,
+				CC2692BC1E8CF3C800B79A5C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -47,8 +65,9 @@
 		CC7A5D601E84C40100D5C3FD /* QMsgAntiRevoking */ = {
 			isa = PBXGroup;
 			children = (
-				CC7A5D611E84C40100D5C3FD /* QMsgAntiRevoking.h */,
-				CC7A5D631E84C40100D5C3FD /* QMsgAntiRevoking.m */,
+				CC7A5D6A1E84C6D400D5C3FD /* MQAIOChatViewController+AnitiRevoking.h */,
+				CC7A5D6B1E84C6D400D5C3FD /* MQAIOChatViewController+AnitiRevoking.m */,
+				CC7A5D6E1E84C72D00D5C3FD /* Dependency.h */,
 			);
 			path = QMsgAntiRevoking;
 			sourceTree = "<group>";
@@ -60,7 +79,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC7A5D621E84C40100D5C3FD /* QMsgAntiRevoking.h in Headers */,
+				CC2692C11E8CF41100B79A5C /* Dependency.h in Headers */,
+				CC7A5D6C1E84C6D400D5C3FD /* MQAIOChatViewController+AnitiRevoking.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,7 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC7A5D641E84C40100D5C3FD /* QMsgAntiRevoking.m in Sources */,
+				CC7A5D6D1E84C6D400D5C3FD /* MQAIOChatViewController+AnitiRevoking.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +277,7 @@
 				CC7A5D691E84C40100D5C3FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
